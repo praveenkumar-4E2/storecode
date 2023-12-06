@@ -1,3 +1,11 @@
+:root{
+  --blue :#4092FF;
+  --pink:#C63AC0B5;
+  --grey1:#8391A1;
+  --grey2:#F7F8F9;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +13,56 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.gradient-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to right, var(--pink), var(--blue)); /* Set the gradient colors as background */
+  border-radius: 6px; /* Make the borders rounded */
+  padding: 1px;
+
+}
+
+.input-container{
+  margin: 8px 0px;
+}
+.input-container input {
+  width: calc(100% - 35px); 
+  height: calc(100% - 35px);
+  box-sizing: content-box;
+  padding: 16px;
+  color: var(--grey1);
+  background-color: var(--grey2);
+  font-size: 16px;
+  outline: none;
+  border: none;
+
+  border-radius: 5px;
+}
+
+button{
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 16px;
+  margin: 8px 0px;
+  color: #fff;
+  font-size: 24px;
+  background: linear-gradient(to right,var(--pink),var(--blue));
+  cursor: pointer;
+}
+
+.link-color{
+  color: #35C2C1;
 }

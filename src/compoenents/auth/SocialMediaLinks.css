@@ -1,0 +1,49 @@
+
+
+.links {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    gap: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .link {
+     width: 60px; 
+    height: 60px; 
+    margin: 0 10px;
+  }
+  
+  .link img {
+    
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+  
+  }
+  .lines{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+  }
+.line {
+    width:120px;
+    height:2px;
+
+   
+}
+.line1{
+    background-color: var(--pink);
+}
+.line2{
+    background-color: var(--blue);
+}
